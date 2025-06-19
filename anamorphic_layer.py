@@ -9,5 +9,5 @@ def extract_secret_from_cover(ciphertext_with_secret: bytes) -> str:
     try:
         cover, hidden = ciphertext_with_secret.split(b'||')
         return base64.b64decode(hidden).decode()
-    except Exception:
-        return "No hidden message found."
+    except Exception as e:
+        return f"No hidden message found. ({e})"
