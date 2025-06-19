@@ -11,3 +11,7 @@ This is a prototype implementation inspired by the research paper [Anamorphic En
 ```bash
 pip install -r requirements.txt
 python main.py
+
+Sample RUn:
+Decrypted cover message: This is a normal message
+Hidden message extracted: This is a secret hidden from dictator
