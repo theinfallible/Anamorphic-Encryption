@@ -10,7 +10,7 @@ secret_message = "This is a secret hidden from dictator"
 anamorphic_cipher = embed_secret_into_cover(cover_ciphertext, secret_message)
 
 # Decrypting normal message
-print("Decrypted cover message:", aes_decrypt(cover_ciphertext))
+print("Decrypted cover message:", aes_decrypt(cover_ciphertext).decode())
 
 # Extracting secret
 print("Hidden message extracted:", extract_secret_from_cover(anamorphic_cipher))
